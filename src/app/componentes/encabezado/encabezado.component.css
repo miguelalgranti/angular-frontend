@@ -18,3 +18,9 @@
     right:4px;
 
 }
+.btn-right {
+    position:absolute;
+    top:95%;
+    right:2%;
+    color:black;
+}

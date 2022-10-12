@@ -1,6 +1,6 @@
 {
 	"nombre": "Miguel M. Algranti",
-	"Keywords": "Antropóloco - Programador - Docente",
+	"Keywords": "Antropólogo - Programador - Autor",
 	"locacion": "Buenos Aires (Argentina)",
 	"imagenPerfil": "../assets/media/jazz.jpeg",
 	"imagenBackground": "../assets/media/background2.jpg",
@@ -59,10 +59,10 @@
 			"periodo": "2018-2021"
 		},
 		{
-			"imagen": "../assets/logos/fulbright logo.png",
-			"puesto": "Fulbright Almuni",
-			"institucion": "University of Santa Barbara (UCSB), California, USA",
-			"periodo": "2014-2015"
+			"imagen": "https://caea.ar/wp-content/uploads/2021/09/logo-caea@2x.png",
+			"puesto": "Investigador externo/Webmaster",
+			"institucion": "Centro Argentino de Etnología Americana",
+			"periodo": "2014-2022"
 		}
 	]
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';   
 
 @Component({
   selector: 'app-encabezado',
@@ -8,6 +9,7 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class EncabezadoComponent implements OnInit {
   miPortfolio:any;
+  faCoffee =faCoffee;
 
   constructor( private datosPortfolio:PortfolioService) { }
 

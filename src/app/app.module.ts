@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
@@ -11,6 +12,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from  '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +20,14 @@ import { HttpClientModule } from  '@angular/common/http';
     AcercaDeComponent,
     ExperienciaComponent,
     AptitudesComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
