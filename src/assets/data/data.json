@@ -1,0 +1,68 @@
+{
+	"nombre": "Miguel M. Algranti",
+	"Keywords": "Antropóloco - Programador - Docente",
+	"locacion": "Buenos Aires (Argentina)",
+	"imagenPerfil": "../assets/media/jazz.jpeg",
+	"imagenBackground": "../assets/media/background2.jpg",
+	"educacion": [{
+			"institucion": "Universidad de Buenos Aires",
+			"titulo": "Doctor en Ciencias Sociales",
+			"anofinal": "2022",
+			"anoinicio": "2009",
+			"imagen": "../assets/logos/600px-UBA.png"
+		},
+		{
+			"institucion": "Udemy",
+			"titulo": "Master en programación",
+			"anofinal": "2017",
+			"anoinicio": "2016",
+			"imagen": "../assets/logos/udemy-logo.png"
+		},
+		{
+			"institucion": "University of Santa Barbara - UCSB",
+			"titulo": "Fulbright Alumni - Study of the US Institute",
+			"anofinal": "2014",
+			"anoinicio": "2014",
+			"imagen": "../assets/logos/fulbright logo.png"
+		},
+		{
+			"institucion": "Universidad de Buenos Aires",
+			"titulo": "Licenciado en Ciencias Antropológicas",
+			"anofinal": "2009",
+			"anoinicio": "2002",
+			"imagen": "../assets/logos/600px-UBA.png"
+		},
+		{
+			"institucion": "Instituto Libre de Segunda Enseñanza (ILSE)",
+			"titulo": "Bachiller",
+			"anofinal": "2000",
+			"anoinicio": "1996",
+			"imagen": "../assets/logos/ilselogo.png"
+		}
+	],
+	"experiencia": [{
+			"imagen": "../assets/logos/LogoUF-vertical-web.png",
+			"puesto": "Profesor titular de Antropología",
+			"institucion": "Departamento de Psicología y Neurociencias - Universidad René Favaloro",
+			"periodo": "2015-2022"
+		},
+		{
+			"imagen": "../assets/logos/UNA-logo.png",
+			"puesto": "Profesor adjunto",
+			"institucion": "en Población aborigen Americana - Departamento de Folklore - Universidad Nacional de las Artes",
+			"periodo": "2014-2022"
+		},
+		{
+			"imagen": "../assets/logos/council-for-world-mission-cwm-ltd-squarelogo-1636552220623.png",
+			"puesto": "Media stream leader",
+			"institucion": "Discernment and radical engagement (DARE CONFERENCE) - Council for World Mission",
+			"periodo": "2018-2021"
+		},
+		{
+			"imagen": "../assets/logos/fulbright logo.png",
+			"puesto": "Fulbright Almuni",
+			"institucion": "University of Santa Barbara (UCSB), California, USA",
+			"periodo": "2014-2015"
+		}
+	]
+}

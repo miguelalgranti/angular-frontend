@@ -1,0 +1,27 @@
+<div id="card mat-card" id="first-card">
+    <div id="profile-background"><img [src]="miPortfolio.imagenBackground"></div>
+    <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+      <input type="password" class="form-control2" id="floatingPassword" placeholder="Password">
+      <button type="btn-success" class="login">Login</button>
+    </div>
+    <div id="AP-img">
+      <img class="AP-img" src="../assets/logos/APLogo-20-20.png">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="formSwitchCheckDefault">
+        <label class="form-check-label" for="formSwitchCheckDefault">english</label>
+      </div>
+  </div>
+<div id="info" style="padding: 16px">
+<div id="info-img">
+    <img class="profile-image" [src]="miPortfolio.imagenPerfil">
+    <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div> 
+</div>
+<div id="info-data">
+  <div>
+      <h1>{{miPortfolio.nombre}}</h1>
+      <div id="info-company">{{miPortfolio.Keywords}}</div>
+      <div id="info-contact">
+          <span>{{miPortfolio.locacion}}</span>
+          <span><a href="#">Información de contacto</a></span></div>
+      </div> 
+  </div>
