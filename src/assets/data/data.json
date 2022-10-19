@@ -64,5 +64,43 @@
 			"institucion": "Centro Argentino de Etnología Americana",
 			"periodo": "2014-2022"
 		}
-	]
+	],
+	"proyectos": [{
+		"nombre":"Centro Argentino de Etnología Americana Web",
+		"fecha":"2007-2022",
+		"descripcion":" proyecto Web de vinculación científica-tecnológica e indexación de las publicaciones institucionales",
+		"sitio":"https://caea.ar/"
+	},
+{
+		"nombre":"Antivisita",
+		"fecha":"2021-2022",
+		"descripcion":"Visita espectral al ccdyt ESMA. Performance teatral digital de Mariana Eva Perez y Laura Kalauz.",
+		"sitio": "https://antivisita.wordpress.com/"
+
+},
+{
+		"nombre":"Cyberpunk Theologies: Discernment and Radical Engagement (D.A.R.E)",
+		"fecha":"2018-2021",
+		"descripcion":"Entrecruzamientos entre inteligencia artifical y teología. Publicación digital y en papel de proyecto de investigación para Council for World Mission (CWM)",
+		"sitio": "https://edare.cwmission.org/"
+},
+{
+		"nombre":"Colectivo Fantasma",
+		"fecha":"2022",
+		"descripcion":"Proyecto inter disciplinario de invetigación y liminalidad sobre espectralidad y terrorismo de estado en LatinoAmerica",
+		"sitio": "https://antivisita.wordpress.com/"
+},
+{
+		"nombre":"Logística Integrada sitio web",
+		"fecha":"2007-2017",
+		"descripcion":"Creación de sitio web multi-lenguage para la empresa de transportes logísticos. Diseño e implementación en Javascript y WP",
+		"sitio": "http://logisticaintegrada.com.ar/"
+},
+{
+		"nombre":"LearnBA",
+		"fecha":"2005-2010",
+		"descripcion":"Diseño y posicionamiento de website turístico especializado en clases de español y tango. Diseñada en adobe flash",
+		"sitio":"https://web.archive.org/web/20070614122514/http://www.learnba.com/"
+}
+]
 }

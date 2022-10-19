@@ -11,6 +11,7 @@ import { AptitudesComponent } from './componentes/aptitudes/aptitudes.component'
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from  '@angular/common/http';
+import { FormsModule } from '@angular/forms'; 
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HttpClientModule } from  '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

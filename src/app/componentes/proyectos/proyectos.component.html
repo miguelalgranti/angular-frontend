@@ -1,53 +1,13 @@
 <div class="card border-light mb-6" style="max-width: flex;">
-    <h2 class="card-header bg-light border-light">Proyectos</h2>
+    <h2 class="card-header bg-light border-light">Proyectos</h2> 
   <div class="list-group"> 
-    <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Diversidad Religiosa app</h5>
-        <small>3 days ago</small>
+    <a *ngFor="let proyectos of proyectosList" [href]="proyectos.sitio" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between"> 
+        <h5 class="mb-1">{{proyectos.nombre}}</h5> 
+        <small>{{proyectos.fecha}} <a href="#" class="btn-right"><i class="fa fa-pen">&nbsp; &nbsp;</i></a>  <a href="#" class="btn-right"><i class="fa-solid fa-xmark" fa-2x></i></a></small> 
       </div>
-      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-      <small>Donec id elit non mi porta.</small>
-    </a>
-    <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Antivisita</h5>
-        <small class="text-muted">Junio 2022</small>
-      </div>
-      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-      <small class="text-muted">Donec id elit non mi porta.</small>
-    </a>
-    <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Council for World Mission (CWM)</h5>
-        <small class="text-muted">june 2020</small>
-      </div>
-      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-      <small class="text-muted">Donec id elit non mi porta.</small>
-    </a>
-    <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Colectivo Fantasma</h5>
-        <small class="text-muted">2012-2022</small>
-      </div>
-      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-      <small class="text-muted">Donec id elit non mi porta.</small>
-    </a>
-    <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">LearnBA</h5>
-        <small class="text-muted">2000-2012</small>
-      </div>
-      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-      <small class="text-muted">Donec id elit non mi porta.</small>
-    </a>
-    <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Logística Integrada</h5>
-        <small class="text-muted">2000-2005</small>
-      </div>
-      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-      <small class="text-muted">Donec id elit non mi porta.</small>
+      <p class="mb-1">{{proyectos.descripcion}}</p>
+      <small>{{proyectos.descripcion}}</small> 
     </a>
   </div>
   </div>

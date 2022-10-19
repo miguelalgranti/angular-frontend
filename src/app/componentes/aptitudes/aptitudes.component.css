@@ -7,6 +7,12 @@
     box-shadow: none;
     position: relative;
 }
+.btn-right {
+    position:absolute;
+    top:5%;
+    right:2%;
+    color:black;
+}
 .progress:after{
     content: "";
     width: 100%;

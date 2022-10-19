@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';   
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'; 
+import { FormsModule } from '@angular/forms';   
 
 @Component({
   selector: 'app-encabezado',
@@ -10,6 +11,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class EncabezadoComponent implements OnInit {
   miPortfolio:any;
   faCoffee =faCoffee;
+  logueado = false;
 
   constructor( private datosPortfolio:PortfolioService) { }
 

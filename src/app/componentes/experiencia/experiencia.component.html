@@ -1,11 +1,11 @@
 <div>
     <div class="card border-light mb-6" style="max-width: flex;">
-      <h2 class="card-header bg-light border-light">Experiencia Laboral</h2> <a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+      <h2 class="card-header bg-light border-light">Experiencia Laboral</h2> 
       <div class="card-body text-dark">
         <h5 class="card-title">Institucional</h5>
         <p class="card-text">
                              <ul class="list-group">
-                              <li *ngFor="let experience of experienciaList" class="list-group-item"><img class="Logo" [src]="experience.imagen"> {{experience.periodo}} - {{experience.puesto}} - {{experience.institucion}}</li> 
+                              <li *ngFor="let experience of experienciaList" class="list-group-item"><img class="Logo" [src]="experience.imagen"> {{experience.periodo}} - {{experience.puesto}} - {{experience.institucion}} <a href="#" class="btn-right"><i class="fa fa-pen"> &nbsp; &nbsp;&nbsp; &nbsp;</i></a> <a href="#" class="btn-right"><i class="fa-solid fa-xmark"></i></a></li> 
                               
                             </ul>
         
@@ -18,7 +18,7 @@
         <h5 class="card-title">Diplomas y Títulos</h5>
         <p class="card-text">
                              <ul class="list-group">
-                              <li *ngFor="let education of educacionList" class="list-group-item"><img class="Logo" [src]="education.imagen"> {{education.anoinicio}} - {{education.titulo}} - {{education.institucion}}</li> 
+                              <li *ngFor="let education of educacionList" class="list-group-item"><img class="Logo" [src]="education.imagen"> {{education.anoinicio}} - {{education.titulo}} - {{education.institucion}} <a href="#" class="btn-right"><i class="fa fa-pen">&nbsp; &nbsp;&nbsp; &nbsp;</i></a> <a href="#" class="btn-right"><i class="fa-solid fa-xmark"></i></a></li> 
                             </ul>
         
       </div>
