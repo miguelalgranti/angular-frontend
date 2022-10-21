@@ -10,10 +10,11 @@
 
 div#profile-background {
     display: 80%;
-    z-index: 2;
+    opacity: 100%;
 }
 div#profile-background img {
     width: 100%;
+    
  
 }
 .profile-image {
@@ -23,6 +24,7 @@ div#profile-background img {
     margin-top: -165px;
     margin-left: 0;
     z-index: 1;
+    
 
 }
 .form-control {

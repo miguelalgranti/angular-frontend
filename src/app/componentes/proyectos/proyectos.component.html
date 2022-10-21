@@ -1,10 +1,37 @@
 <div class="card border-light mb-6" style="max-width: flex;">
-    <h2 class="card-header bg-light border-light">Proyectos</h2> 
+    <h2 class="card-header bg-light border-light">Proyectos</h2> <button type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor5"></button>
+    <div class="modal fade" id="Modaleditor5" tabindex="-1" aria-labelledby="Modaleditor5" aria-hidden="true">
+      <div class="modal-dialog model-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="Modaleditor5">Nueva Entrada</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="mb-3">
+            <div>
+              <label>Fecha:
+                <input class="form-control" placeholder={{this.proyectosList.fecha}} [(ngModel)]="proyectosList.fecha"/>
+              </label>
+              <label>Posición:
+                <input class="form-control" [(ngModel)]="proyectosList.nombre">
+              </label>
+              <label>Institución:
+                <input class="form-control" [(ngModel)]="proyectosList.descripcion">
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" >Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="list-group"> 
     <a *ngFor="let proyectos of proyectosList" [href]="proyectos.sitio" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
       <div class="d-flex w-100 justify-content-between"> 
         <h5 class="mb-1">{{proyectos.nombre}}</h5> 
-        <small>{{proyectos.fecha}} <a href="#" class="btn-right"><i class="fa fa-pen">&nbsp; &nbsp;</i></a>  <a href="#" class="btn-right"><i class="fa-solid fa-xmark" fa-2x></i></a></small> 
+        <small>{{proyectos.fecha}} <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor5"><i class="fa fa-pen">&nbsp; &nbsp;</i></a>  <a href="#" class="btn-right"><i class="fa-solid fa-xmark" fa-2x></i></a></small> 
       </div>
       <p class="mb-1">{{proyectos.descripcion}}</p>
       <small>{{proyectos.descripcion}}</small> 

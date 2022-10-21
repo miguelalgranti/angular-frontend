@@ -5,24 +5,36 @@
     color:black;
 }
 .btn-close {
-  top: 0%;
-  right: 5%;
+  position: relative;
+  top: 2%;
+  right: 15%;
 }
 .btn-right2 {
-  position:absolute;
-  top:520px;
-  right: 10px;
+  position:relative;
+  top:-70px;
+  left:430px;
   color:black;
 }
-.btn-light {
+.btn-light2 {
     color:grey;
     background-color: white;
     width: 100px;
     height: 35px;
     z-index: 0;
     position: absolute;
-    top:5%;
-    right:1%;
+    top:20px;
+    right:10px;
+
+}
+.btn-light {
+  color:grey;
+  background-color: white;
+  width: 100px;
+  height: 35px;
+  z-index: 0;
+  position: absolute;
+  top:45px;
+  right:10px;
 
 }
 .fa-twitter{
@@ -34,11 +46,11 @@
 .fa-instagram {
     position: absolute;
     top:12px;
-    right:40px;
+    right:42px;
 }
 .fa-facebook-f {
     position: absolute;
-    top:12px;
+    top:10px;
     right:10px;
 }
 .myform {
@@ -48,7 +60,7 @@
     padding: 0;
   }
   .modal-content {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   .modal-body {

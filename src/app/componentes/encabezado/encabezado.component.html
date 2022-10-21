@@ -12,7 +12,7 @@
       <button  class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
       <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered-lg">
       <div class="modal-content">
         <div class="modal-body">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -24,10 +24,10 @@
                   <input type="usuario" class="form-control" id="exampleInpuyusuario"> 
                 </div>
                   <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                      <label for="exampleInputPassword1" class="form-label input-lg">Contraseña</label>
                       <input type="password" class="form-control" id="exampleInputPassword">
                   </div>
-                  <button type="submit" class="btn btn-light mt-3">INGRESAR</button>
+                  <button type="submit" class="btn btn-light2 mt-3">INGRESAR</button>
               
               </form>
           </div>
@@ -45,36 +45,33 @@
 <div id="info-data"> 
   <div>
       <h1>{{miPortfolio.nombre}}</h1>  
-      <div id="info-company">{{miPortfolio.Keywords}}  <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor"><i class="fa fa-pen"></i></a></div> 
+      <div id="info-company">{{miPortfolio.Keywords}}</div> <span>{{miPortfolio.locacion}}</span> <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor"><i class="fa fa-pen"></i></a>
+          <span><a href="#">Información de contacto</a></span></div>
       <div class="modal fade" id="Modaleditor" tabindex="-1" aria-labelledby="Modaleditor" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="Modaleditor">Modo Edición</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="mb-3">
               <div>
                 <label>Nombre:
-                  <input [(ngModel)]="miPortfolio.nombre"/>
+                  <input class="form-control" placeholder="miPortfolio.nombre" [(ngModel)]="miPortfolio.nombre"/>
                 </label>
                 <label>Keywords:
-                  <input  [(ngModel)]="miPortfolio.Keywords"/>
+                  <input class="form-control" [(ngModel)]="miPortfolio.Keywords"/>
                 </label>
                 <label>Locación:
-                  <input  [(ngModel)]="miPortfolio.locacion"/>
+                  <input class="form-control" [(ngModel)]="miPortfolio.locacion"/>
                 </label>
               </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-primary" >Save changes</button>
             </div>
           </div>
         </div>
       </div>
-      <div id="info-contact">
-          <span>{{miPortfolio.locacion}}</span>
-          <span><a href="#">Información de contacto</a></span></div>
-      </div> 
+      
   </div>
