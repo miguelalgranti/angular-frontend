@@ -11,7 +11,11 @@ import { AptitudesComponent } from './componentes/aptitudes/aptitudes.component'
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from  '@angular/common/http';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
+import { PortfolioComponent } from './componentes/portfolio/portfolio.component'; 
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -23,6 +27,8 @@ import { FormsModule } from '@angular/forms';
     ExperienciaComponent,
     AptitudesComponent,
     ProyectosComponent,
+    PortfolioComponent,
+    
     
   ],
   imports: [
@@ -30,7 +36,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

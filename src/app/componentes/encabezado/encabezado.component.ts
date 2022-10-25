@@ -3,6 +3,8 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'; 
 import { FormsModule } from '@angular/forms';  
 import { Observable  } from 'rxjs'; 
+import { IniciarSesionComponent } from '../iniciar-sesion/iniciar-sesion.component';
+
 
 
 @Component({
