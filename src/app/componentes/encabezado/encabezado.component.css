@@ -16,25 +16,25 @@
   color:black;
 }
 .btn-light2 {
-    color:grey;
-    background-color: white;
-    width: 100px;
-    height: 35px;
-    z-index: 0;
-    position: absolute;
-    top:20px;
-    right:10px;
-
-}
-.btn-light {
   color:grey;
   background-color: white;
   width: 100px;
   height: 35px;
   z-index: 0;
   position: absolute;
-  top:45px;
+  top:20px;
   right:10px;
+
+}
+.btn-light {
+color:grey;
+background-color: white;
+width: 100px;
+height: 35px;
+z-index: 0;
+position: absolute;
+top:45px;
+right:10px;
 
 }
 .fa-twitter{
