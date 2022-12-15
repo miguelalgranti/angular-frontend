@@ -29,7 +29,6 @@
         </div>
       </div> 
       <div class="card-body text-dark">
-        <h5 class="card-title">Institucional</h5>
                              <ul class="list-group">
                               <li *ngFor="let experience of experienciaList" class="list-group-item" ><img class="Logo" [src]="experience.imagen"> {{experience.periodo}} - {{experience.puesto}} - {{experience.institucion}} <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor6"><i class="fa fa-pen"></i></a>  &nbsp; &nbsp;&nbsp; &nbsp; <a href="#" class="btn-right"><i class="fa-solid fa-xmark"></i></a></li> 
                               <div class="modal fade" id="Modaleditor6" tabindex="-1" aria-labelledby="Modaleditor6" aria-hidden="true">
@@ -63,66 +62,3 @@
         
       </div>
   </div>
-  <div>
-    <div class="card border-light mb-6" style="max-width: flex;">
-      <h2 class="card-header bg-light border-light">Educación - Academia </h2> <button type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor4"></button>
-      <div class="modal fade" id="Modaleditor4" tabindex="-1" aria-labelledby="Modaleditor4" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="Modaleditor4">Modo Edición</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="mb-3">
-              <div>
-                <label>Fecha:
-                  <input class="form-control" placeholder={{educacionList.anoinicio}} [(ngModel)]="this.educacionList.anoinicio"/>
-                </label>
-                <label>Título:
-                  <input class="form-control" [(ngModel)]="educacionList.titulo" placeholder={{educacionList.titulo}}>
-                </label>
-                <label>Institución:
-                  <input class="form-control" [(ngModel)]="educacionList.institucion">
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" >Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-        <h5 class="card-title">Diplomas y Títulos</h5>
-                             <ul class="list-group">
-                              <li *ngFor="let education of educacionList" class="list-group-item"><img class="Logo" [src]="education.imagen"> {{education.anoinicio}} - {{education.titulo}} - {{education.institucion}} <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor4"><i class="fa fa-pen"></i></a> <a href="#" class="btn-right"><i class="fa-solid fa-xmark"></i></a></li> 
-                              <div class="modal fade" id="Modaleditor4" tabindex="-1" aria-labelledby="Modaleditor4" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="Modaleditor4">Modo Edición</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="mb-3">
-              <div>
-                <label>Fecha:
-                  <input class="form-control" placeholder={{educacionList.anoinicio}} [(ngModel)]="this.educacionList.anoinicio"/>
-                </label>
-                <label>Título:
-                  <input class="form-control" [(ngModel)]="this.educacionList.titulo" placeholder={{educacionList.titulo}}>
-                </label>
-                <label>Institución:
-                  <input class="form-control" [(ngModel)]="this.educacionList.institucion">
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" >Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-                            </ul>
-        
-      </div>
