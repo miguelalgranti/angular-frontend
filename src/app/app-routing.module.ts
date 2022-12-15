@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
-import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
-import { GuardGuard } from './servicios/guard.guard';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+
+
 
 const routes: Routes = [
-  {path: 'portfolio', component:PortfolioComponent }, // canActivate:[GuardGuard]
-  {path: 'iniciar-sesion', component:IniciarSesionComponent},
-  {path: '',redirectTo: 'iniciar-sesion', pathMatch: 'full'}
+  {path: '', component:HomeComponent },
+  {path: 'login', component:LoginComponent},
+  {path: 'nuevaexp', component: NewExperienciaComponent},
+  {path: 'editexp/:id', component: EditExperienciaComponent},
 ];
 
 @NgModule({

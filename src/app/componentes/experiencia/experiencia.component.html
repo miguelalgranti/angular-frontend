@@ -1,23 +1,22 @@
 <div>
     <div class="card border-light mb-6" style="max-width: flex;">
-      <h2 class="card-header bg-light border-light">Experiencia Laboral</h2> <button type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor2"></button>
+      <h2 class="card-header bg-light border-light">Experiencia Laboral</h2> <button  type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor2"></button>
       <div class="modal fade" id="Modaleditor2" tabindex="-1" aria-labelledby="Modaleditor2" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="Modaleditor3">Nueva Entrada</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" routerLink="/nuevaexp" *ngIf="isLogged"></button>
             </div>
-            <div class="mb-3">
-              <div>
+            <div class="mb-3"><div>
                 <label>Fecha:
-                  <input class="form-control" placeholder={{experienciaList.titulo}} [(ngModel)]="educacionList.anoinicio"/>
+                  <input class="form-control">
                 </label>
                 <label>Posición:
-                  <input class="form-control" [(ngModel)]="experienciaList.titulo">
+                  <input class="form-control" >
                 </label>
                 <label>Institución:
-                  <input class="form-control" [(ngModel)]="experienciaList.institucion">
+                  <input class="form-control" >
                 </label>
               </div>
             </div>
@@ -30,24 +29,28 @@
       </div> 
       <div class="card-body text-dark">
                              <ul class="list-group">
-                              <li *ngFor="let experience of experienciaList" class="list-group-item" ><img class="Logo" [src]="experience.imagen"> {{experience.periodo}} - {{experience.puesto}} - {{experience.institucion}} <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor6"><i class="fa fa-pen"></i></a>  &nbsp; &nbsp;&nbsp; &nbsp; <a href="#" class="btn-right"><i class="fa-solid fa-xmark"></i></a></li> 
+                              <tr *ngFor="let Experiencia of expe" class="list-group-item" >
+                              <td>{{Experiencia.periodoE}}</td>  
+                              <td>{{Experiencia.descripcionE}}</td> 
+                              <td>{{Experiencia.institucionE}} </td>  
+                              <td *ngIf="isLogged"><a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor6"><i class="fa fa-pen"></i></a>  &nbsp; &nbsp;&nbsp; &nbsp;  <td *ngIf="isLogged"></td> <a href="#" class="btn-right"><i class="fa-solid fa-xmark"></i></a></tr> 
                               <div class="modal fade" id="Modaleditor6" tabindex="-1" aria-labelledby="Modaleditor6" aria-hidden="true">
                                 <div class="modal-dialog">
                                   <div class="modal-content">
                                     <div class="modal-header">
                                       <h1 class="modal-title fs-5" id="Modaleditor6">Nueva Entrada</h1>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" *ngIf="isLogged"></button>
                                     </div>
                                     <div class="mb-3">
                                       <div>
                                         <label>Fecha:
-                                          <input class="form-control" placeholder={{experienciaList.titulo}} [(ngModel)]="educacionList.anoinicio"/>
+                                          <input class="form-control" />
                                         </label>
                                         <label>Posición:
-                                          <input class="form-control" [(ngModel)]="experienciaList.titulo">
+                                          <input class="form-control" >
                                         </label>
                                         <label>Institución:
-                                          <input class="form-control" [(ngModel)]="experienciaList.institucion">
+                                          <input class="form-control">
                                         </label>
                                       </div>
                                     </div>

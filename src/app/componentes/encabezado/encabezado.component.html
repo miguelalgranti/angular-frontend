@@ -1,5 +1,5 @@
 <div id="card mat-card" id="first-card">
-    <div id="profile-background"><img [src]="miPortfolio.imagenBackground"></div>
+    <div id="profile-background"><img src="../assets/media/background2.jpg"></div>
 <a style="color: #3b5998;" href="#!" role="button"
 ><i class="fab fa-facebook-f fa-2x"></i
 ></a>
@@ -9,45 +9,19 @@
 <a style="color: #ac2bac;" href="https://www.instagram.com/miguel.algranti/" role="button"
 ><i class="fab fa-instagram fa-2x"></i
 ></a>
-      <button  class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
-      <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered-lg">
-      
-      <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          <div class="myform bg-dark">
-              <h1 class="text-center">Login editor</h1>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Usuario</label>
-                  <input type="usuario" class="form-control" id="exampleInpuyusuario"> 
-                </div>
-                  <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label input-lg">Contraseña</label>
-                      <input type="password" class="form-control" id="exampleInputPassword">
-                  </div>
-                  <button type="submit" class="btn btn-light2 mt-3">INGRESAR</button>
-                 
-              
-              </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <button  class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="login()" *ngIf="!isLogged">Login</button>
+      <button  class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
     <div id="AP-img">
       <img class="AP-img" src="../assets/logos/APLogo-20-20.png">
   </div>
 <div id="info" style="padding: 16px">
 <div id="info-img">
-    <img class="profile-image" [src]="miPortfolio.imagenPerfil"> 
+    <img class="profile-image" src="../assets/media/jazz.jpeg"> 
 </div>
 <div id="info-data"> 
   <div>
-      <h1>{{miPortfolio.nombre}}</h1>  
-      <div id="info-company">{{miPortfolio.Keywords}}</div> <span>{{miPortfolio.locacion}}</span> <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor"><i class="fa fa-pen"></i></a>
+      <h1>Miguel M. Algranti</h1>  
+      <div id="info-company">Antropólogo - Programador - Docente</div> <span>Buenos Aires, Argentina</span> <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor"><i class="fa fa-pen"></i></a>
           <span><a href="#">Información de contacto</a></span></div>
       <div class="modal fade" id="Modaleditor" tabindex="-1" aria-labelledby="Modaleditor" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -58,13 +32,13 @@
             <div class="mb-3">
               <div>
                 <label>Nombre:
-                  <input class="form-control" placeholder="miPortfolio.nombre" [(ngModel)]="miPortfolio.nombre"/>
+                  <input class="form-control" placeholder="nombre" />
                 </label>
                 <label>Keywords:
-                  <input class="form-control" [(ngModel)]="miPortfolio.Keywords"/>
+                  <input class="form-control" />
                 </label>
                 <label>Locación:
-                  <input class="form-control" [(ngModel)]="miPortfolio.locacion"/>
+                  <input class="form-control" />
                 </label>
               </div>
             </div>

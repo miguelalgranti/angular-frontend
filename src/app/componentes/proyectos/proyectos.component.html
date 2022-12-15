@@ -10,13 +10,13 @@
           <div class="mb-3">
             <div>
               <label>Fecha:
-                <input class="form-control" placeholder={{this.proyectosList.fecha}} [(ngModel)]="proyectosList.fecha"/>
+                <input class="form-control"/>
               </label>
               <label>Posición:
-                <input class="form-control" [(ngModel)]="proyectosList.nombre">
+                <input class="form-control" >
               </label>
               <label>Institución:
-                <input class="form-control" [(ngModel)]="proyectosList.descripcion">
+                <input class="form-control" >
               </label>
             </div>
           </div>
@@ -28,7 +28,7 @@
       </div>
     </div>
   <div class="list-group"> 
-    <a *ngFor="let proyectos of proyectosList" [href]="proyectos.sitio" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
+    <a *ngFor="let proyectos of Proyectos" [href]="proyectos.sitio" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
       <div class="d-flex w-100 justify-content-between"> 
         <h5 class="mb-1">{{proyectos.nombre}}</h5> 
         <small>{{proyectos.fecha}} <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor5"><i class="fa fa-pen">&nbsp; &nbsp;</i></a>  <a href="#" class="btn-right"><i class="fa-solid fa-xmark" fa-2x></i></a></small> 
