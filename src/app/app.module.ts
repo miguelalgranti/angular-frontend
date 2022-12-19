@@ -19,6 +19,7 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
+import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 
 
 
@@ -38,6 +39,7 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
     EducacionComponent,
     EditExperienciaComponent,
     NewEducacionComponent,
+    EditEducacionComponent,
     
 
   

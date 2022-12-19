@@ -1,32 +1,6 @@
 <div>
     <div class="card border-light mb-6" style="max-width: flex;">
-      <h2 class="card-header bg-light border-light">Experiencia Laboral</h2> <button *ngIf="isLogged" type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor2"></button>
-      <div class="modal fade" id="Modaleditor2" tabindex="-1" aria-labelledby="Modaleditor2" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="Modaleditor3">Nueva Entrada</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" routerLink="/nuevaexp" *ngIf="isLogged"></button>
-            </div>
-            <div class="mb-3"><div>
-                <label>Fecha:
-                  <input class="form-control">
-                </label>
-                <label>Posición:
-                  <input class="form-control" >
-                </label>
-                <label>Institución:
-                  <input class="form-control" >
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" >Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div> 
+      <h2 class="card-header bg-light border-light">Experiencia Laboral</h2> <button *ngIf="isLogged" type="button" class="fa-plus" routerLink="/nuevaexp"></button> 
       <div class="card-body text-dark">
                              <ul class="list-group">
                               <tr *ngFor="let Experiencia of expe" class="list-group-item" >

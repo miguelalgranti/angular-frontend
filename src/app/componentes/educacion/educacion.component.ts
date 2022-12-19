@@ -28,6 +28,16 @@ this.isLogged = false;
       data => {this.edu = data;})
     
 }
+delete(id?: number){
+  if(id != undefined){
+    this.sEducacion.delete(id).subscribe(
+      { next:data => {
+        this.cargarEducacion();
+      }, error: err => {
+        alert("No se pudo borrar la experiencia");
+      }
+    }
+    )
   }
-
-
+}
+}
