@@ -1,5 +1,5 @@
 <div class="card border-light mb-6" style="max-width: flex;">
-    <h2 class="card-header bg-light border-light">Proyectos</h2> <button type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor5"></button>
+    <h2 class="card-header bg-light border-light">Proyectos</h2> <button *ngIf="isLogged" type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor5"></button>
     <div class="modal fade" id="Modaleditor5" tabindex="-1" aria-labelledby="Modaleditor5" aria-hidden="true">
       <div class="modal-dialog model-xl">
         <div class="modal-content">

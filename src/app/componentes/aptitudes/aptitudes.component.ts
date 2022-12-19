@@ -3,6 +3,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { FormsModule } from '@angular/forms';  
 import { Observable  } from 'rxjs'; 
 import { PersonaService } from 'src/app/service/persona.service';
+import { TokenService } from 'src/app/service/token.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-aptitudes',
@@ -10,14 +12,16 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./aptitudes.component.css']
 })
 export class AptitudesComponent implements OnInit {
-miPortfolio:any;
-  constructor(private datosPortfolio:PersonaService) { }
+  isLogged = false;
+  constructor(private personaService: PersonaService, router: Router, private tokenService: TokenService) { }
 
     ngOnInit(): void {
-      this.datosPortfolio.getPersona().subscribe(data =>{
-        console.log(data);
-        this.miPortfolio=data;
-      });     
+      if(this.tokenService.getToken()){
+        this.isLogged = true;
+      }else{
+        this.isLogged = false;
+      }
+    };     
   }
-  }
+  
   

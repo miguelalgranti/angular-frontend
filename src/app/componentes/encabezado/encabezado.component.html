@@ -21,8 +21,8 @@
 <div id="info-data"> 
   <div>
       <h1>Miguel M. Algranti</h1>  
-      <div id="info-company">Antropólogo - Programador - Docente</div> <span>Buenos Aires, Argentina</span> <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor"><i class="fa fa-pen"></i></a>
-          <span><a href="#">Información de contacto</a></span></div>
+      <div id="info-company">Antropólogo - Programador - Docente</div> <span>Buenos Aires, Argentina</span> <a *ngIf="isLogged" type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor"><i class="fa fa-pen" *ngIf="isLogged"></i></a>
+          <span>&nbsp;&nbsp;<a href="#">Información de contacto</a></span></div>
       <div class="modal fade" id="Modaleditor" tabindex="-1" aria-labelledby="Modaleditor" aria-hidden="true">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">

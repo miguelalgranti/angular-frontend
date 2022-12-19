@@ -31,14 +31,14 @@ this.isLogged = false;
 delete(id?: number){
   if(id != undefined){
     this.sExperiencia.delete(id).subscribe(
-      data => {
+      { next:data => {
         this.cargarExperiencia();
-      }, err => {
+      }, error: err => {
         alert("No se pudo borrar la experiencia");
       }
+    }
     )
-  }
-}
-}
+}}
 
 
+}

@@ -1,5 +1,5 @@
 <div class="card border-light mb-6" style="max-width: flex;">
-    <h2 class="card-header bg-light border-light">Aptitudes</h2> <button type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor5"></button>
+    <h2 class="card-header bg-light border-light">Aptitudes</h2> <button *ngIf="isLogged"  type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor5"></button>
     <div class="modal fade" id="Modaleditor5" tabindex="-1" aria-labelledby="Modaleditor5" aria-hidden="true">
       <div class="modal-dialog model-xl">
         <div class="modal-content">
@@ -10,13 +10,13 @@
           <div class="mb-3">
             <div>
               <label>Fecha:
-                <input class="form-control"  [(ngModel)]="miPortfolio.fecha"/>
+                <input class="form-control"  />
               </label>
               <label>Posición:
-                <input class="form-control" [(ngModel)]="miPortfolio.nombre">
+                <input class="form-control" >
               </label>
               <label>Institución:
-                <input class="form-control" [(ngModel)]="miPortfolio.descripcion">
+                <input class="form-control">
               </label>
             </div>
           </div>
@@ -28,7 +28,7 @@
       </div>
     </div>
 </div>
-<h5> Lenguajes naturales</h5>
+<h5> Stack </h5>
 <div class="row">
 <div class="col-md-3 col-sm-6">
   <div class="progress blue">
@@ -38,7 +38,7 @@
       <span class="progress-right">
           <span class="progress-bar"></span>
       </span>
-      <div class="progress-value">Inglés</div>
+      <div class="progress-value">Angular</div>
   </div>
 </div>
 <div class="col-md-3 col-sm-6">
@@ -49,7 +49,7 @@
     <span class="progress-right">
         <span class="progress-bar"></span>
     </span>
-    <div class="progress-value">Español</div>
+    <div class="progress-value">Bootstrap</div>
 </div>
 
 </div>
@@ -61,7 +61,7 @@
       <span class="progress-right">
           <span class="progress-bar"></span>
       </span>
-      <div class="progress-value">Francés</div>
+      <div class="progress-value">Springboot</div>
   </div>
 
 </div> 
@@ -73,10 +73,10 @@
       <span class="progress-right">
           <span class="progress-bar"></span>
       </span>
-      <div class="progress-value">Portugues</div>
+      <div class="progress-value">MySQL</div>
   </div>
 
-</div>   <h5> Lenguajes Formales</h5>
+</div>   <h5> Lenguajes </h5>
 <div class="row">
 <div class="col-md-3 col-sm-6">
   <div class="progress blue">
@@ -97,7 +97,7 @@
     <span class="progress-right">
         <span class="progress-bar"></span>
     </span>
-    <div class="progress-value">Java</div>
+    <div class="progress-value">Typescript</div>
 </div>
 
 </div>
@@ -109,7 +109,7 @@
       <span class="progress-right">
           <span class="progress-bar"></span>
       </span>
-      <div class="progress-value">C++</div>
+      <div class="progress-value">Java</div>
   </div>
 
 </div>
@@ -121,7 +121,7 @@
       <span class="progress-right">
           <span class="progress-bar"></span>
       </span>
-      <div class="progress-value">Typescript</div>
+      <div class="progress-value">C++</div>
   </div>
 
 </div> 

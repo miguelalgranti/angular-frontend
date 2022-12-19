@@ -3,6 +3,10 @@
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
+                    <label for="imagenE">Logo</label>
+                    <input type="text" class="form-control" id="imagenE" name="imagenE" [(ngModel)]="expLab.imagenE" required>
+                </div>
+                <div class="form-group">
                     <label for="nombreE">Nombre de la empresa</label>
                     <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="expLab.institucionE" required>
                 </div>
@@ -10,7 +14,11 @@
                     <label for="descripcionE">Descripcion de la tarea</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="expLab.descripcionE" required>
                 </div>
-                <button class="btn btn-primary">
+                <div class="form-group">
+                    <label for="descripcionE">Período</label>
+                    <input type="text" class="form-control" id="PeriodoE" name="PeriodoE" [(ngModel)]="expLab.periodoE" required>
+                </div>
+                <button class="btn btn-primary" >
                     Actualizar
                 </button>
             </form>
