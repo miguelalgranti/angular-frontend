@@ -15,7 +15,7 @@ export class AcercaDeComponent implements OnInit {
 
 
 constructor(public personaService: PersonaService) { }
-
+isLogged = false;
   ngOnInit(): void {
 
    }
