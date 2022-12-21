@@ -1,13 +1,13 @@
-<div class="card border-light mb-6" style="max-width: flex;">
-    <h2 class="card-header bg-light border-light">Proyectos</h2> <button *ngIf="isLogged" type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor5"></button>
-  <div class="list-group"> 
-    <a *ngFor="let proyectos of Proyectos" [href]="proyectos.sitio" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
-      <div class="d-flex w-100 justify-content-between"> 
-        <h5 class="mb-1">{{proyectos.nombre}}</h5> 
-        <small>{{proyectos.fecha}} <a type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor5"><i class="fa fa-pen">&nbsp; &nbsp;</i></a>  <a href="#" class="btn-right"><i class="fa-solid fa-xmark" fa-2x></i></a></small> 
-      </div>
-      <p class="mb-1">{{proyectos.descripcion}}</p>
-      <small>{{proyectos.descripcion}}</small> 
-    </a>
-  </div>
-  </div>
+<div>
+  <div class="card border-light mb-6" style="max-width: flex;">
+    <h2 class="card-header bg-light border-light">Proyectos</h2> <button *ngIf="isLogged" type="button" class="fa-plus" routerLink="/nuevopro"></button> 
+    <div class="card-body text-dark">
+                           <ul class="list-group">
+                            <tr *ngFor="let Proyecto of pro" class="list-group-item" >
+                            <td> <img class="Logo" src={{Proyecto.imagenP}}>&nbsp;|&nbsp;{{Proyecto.fechaP}}&nbsp;|&nbsp;{{Proyecto.nombreP}}&nbsp;|&nbsp;</td><td>{{Proyecto.descripcionP}}</td>  
+                            <td *ngIf="isLogged"><a class="btn-right2" routerLink="/editpro/{{Proyecto.id}}"><i class="fa fa-pen" ></i></a>  &nbsp; &nbsp;&nbsp; &nbsp;  <td *ngIf="isLogged"></td> <a *ngIf="isLogged" (click)="delete(Proyecto.id)" class="btn-right"><i class="fa-solid fa-xmark"></i></a></tr> 
+                          
+                          </ul>
+      
+    </div>
+</div>
