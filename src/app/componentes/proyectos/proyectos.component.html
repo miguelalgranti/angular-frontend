@@ -1,32 +1,5 @@
 <div class="card border-light mb-6" style="max-width: flex;">
     <h2 class="card-header bg-light border-light">Proyectos</h2> <button *ngIf="isLogged" type="button" class="fa-plus" data-bs-toggle="modal" data-bs-target="#Modaleditor5"></button>
-    <div class="modal fade" id="Modaleditor5" tabindex="-1" aria-labelledby="Modaleditor5" aria-hidden="true">
-      <div class="modal-dialog model-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="Modaleditor5">Nueva Entrada</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="mb-3">
-            <div>
-              <label>Fecha:
-                <input class="form-control"/>
-              </label>
-              <label>Posición:
-                <input class="form-control" >
-              </label>
-              <label>Institución:
-                <input class="form-control" >
-              </label>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" >Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
   <div class="list-group"> 
     <a *ngFor="let proyectos of Proyectos" [href]="proyectos.sitio" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">
       <div class="d-flex w-100 justify-content-between"> 
