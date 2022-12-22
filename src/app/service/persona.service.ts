@@ -9,7 +9,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-URL = 'https//:vivacious-cherice-miguelalgranti.koyeb.app/' + '/personas/';
+URL = 'https//:vivacious-cherice-miguelalgranti.koyeb.app' + '/personas/';
 
   constructor(private http: HttpClient) { }
 
