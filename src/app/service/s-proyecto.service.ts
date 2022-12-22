@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SProyectoService {
-  proURL = 'https://vivacious-cherice-miguelalgranti.koyeb.app/proyectos/';
+  proURL = 'https://apidemiguel.herokuapp.com/proyectos/';
  
 
   constructor(private httpClient: HttpClient) { }
