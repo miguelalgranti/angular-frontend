@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
 export class AuthService {
 authURL = 'https://apidemiguel.herokuapp.com/auth/';
 
-
+URL = environment.URL + 'auth/';
 
   constructor(private httpClient: HttpClient) { }
 
