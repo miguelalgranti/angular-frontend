@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
-authURL = 'http://vivacious-cherice-miguelalgranti.koyeb.app/auth/';
+authURL = 'https://vivacious-cherice-miguelalgranti.koyeb.app/auth/';
 
 
 

@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SProyectoService {
-  proURL = 'http://vivacious-cherice-miguelalgranti.koyeb.app/proyectos/';
+  proURL = 'https://vivacious-cherice-miguelalgranti.koyeb.app/proyectos/';
  
 
   constructor(private httpClient: HttpClient) { }

@@ -7,7 +7,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class SEducacionService {
-  URL = 'http://vivacious-cherice-miguelalgranti.koyeb.app/educ/';
+  URL = 'https://vivacious-cherice-miguelalgranti.koyeb.app/educ/';
 
   constructor(private httpClient: HttpClient) { }
 
