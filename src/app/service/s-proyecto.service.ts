@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SProyectoService {
-  proURL = 'http://127.0.0.1:8080/proyectos/';
+  proURL = 'http://vivacious-cherice-miguelalgranti.koyeb.app/proyectos/';
  
 
   constructor(private httpClient: HttpClient) { }

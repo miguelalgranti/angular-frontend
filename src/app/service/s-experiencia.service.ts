@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL = 'http://127.0.0.1:8080/explab/';
+  expURL = 'http:vivacious-cherice-miguelalgranti.koyeb.app/explab/';
  
 
   constructor(private httpClient: HttpClient) { }
