@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class SEducacionService {
   
-  URL = 'https://apidemiguel.herokuapp.com/educ/';
+  URL = 'https://vivacious-cherice-miguelalgranti.koyeb.app/educ/';
   //URL = environment.URL_API + 'educ/';
 
   constructor(private httpClient: HttpClient) { }
