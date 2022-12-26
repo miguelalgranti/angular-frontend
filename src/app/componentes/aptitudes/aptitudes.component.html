@@ -1,34 +1,37 @@
 <div class="card border-light mb-6" style="max-width: flex;">
-    <h2 class="card-header bg-light border-light">Hard & Soft Skills</h2> <button *ngIf="isLogged" routerLink="/newskill"  type="button" class="fa-plus"></button>
-</div>
-<div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
-    <circle-progress 
-    [percent]="(skill.porcentaje)" 
-    [radius]="90" [imageSrc]="''" 
-    [title]="(skill.nombre)"
-    [titleColor]="'#212F3C'"
-    [showTitle]="true" 
-    [showImage]="false" 
-    [imageHeight]="70" 
-    [imageWidth]="70" 
-    [showUnits]="false"
-    [showSubtitle]="false" 
-    [outerStrokeWidth]="16" 
-    [innerStrokeWidth]="2" 
-    [outerStrokeColor]="'#78C000'"
-    [innerStrokeColor]="'#C7E596'" 
-    [animation]="true" 
-    [animationDuration]="600">
-    </circle-progress>
+    <h1 class="card-header bg-light border-light">Hard & Soft skills</h1>
+    <button type="button" routerLink="/newskill" class="fa-plus" *ngIf="isLogged"></button>
+<div class="row">
+    <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo" *ngFor="let skill of skill">
+   <div><circle-progress 
+        [percent]="(skill.porcentaje)" 
+        [radius]="90" [imageSrc]="''" 
+        [title]="(skill.nombre)"
+        [titleColor]="'#212F3C'"
+        [showTitle]="true" 
+        [showImage]="false" 
+        [imageHeight]="70" 
+        [imageWidth]="70" 
+        [showUnits]="false"
+        [showSubtitle]="false" 
+        [outerStrokeWidth]="16" 
+        [innerStrokeWidth]="2" 
+        [outerStrokeColor]="'#668c23'"
+        [innerStrokeColor]="'#C7E596'" 
+        [animation]="true" 
+        [animationDuration]="600">
+        </circle-progress></div> 
+
 
     <div>
         <td *ngIf="isLogged">
             <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
-                <i class="bi bi-pencil-fill"></i></button>
+                <i class="fa fa-pen"></i></button>
         </td>
         <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(skill.id)">
+            <button class="fa-solid fa-xmark" (click)="delete(skill.id)">
                 <i class="bi bi-trash-fill"></i></button>
         </td>
     </div>
 </div>
+
