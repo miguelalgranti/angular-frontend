@@ -9,8 +9,7 @@ import { Educacion } from '../model/educacion';
 })
 export class SEducacionService {
   
-  URL = 'https://vivacious-cherice-miguelalgranti.koyeb.app/educ/';
-  //URL = environment.URL_API + 'educ/';
+  URL = environment.URL + 'educ/';
 
   constructor(private httpClient: HttpClient) { }
 

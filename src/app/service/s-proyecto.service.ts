@@ -8,28 +8,28 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SProyectoService {
-  proURL = 'https://vivacious-cherice-miguelalgranti.koyeb.app/proyectos/';
+  URL = environment.URL + 'proyectos/';
  
 
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Proyecto[]> {
-    return this.httpClient.get<Proyecto[]>(this.proURL + 'lista');
+    return this.httpClient.get<Proyecto[]>(this.URL + 'lista');
   }
 
   public detail(id: number): Observable<Proyecto> {
-    return this.httpClient.get<Proyecto>(this.proURL + `detail/${id}`);
+    return this.httpClient.get<Proyecto>(this.URL + `detail/${id}`);
   }
 
   public save(proyecto: Proyecto): Observable<any> {
-    return this.httpClient.post<any>(this.proURL + 'create', proyecto);
+    return this.httpClient.post<any>(this.URL + 'create', proyecto);
   }
 
   public update(id: number, proyecto: Proyecto): Observable<any> {
-    return this.httpClient.put<any>(this.proURL + `update/${id}`, proyecto);
+    return this.httpClient.put<any>(this.URL + `update/${id}`, proyecto);
   }
 
   public delete(id: number): Observable<any> {
-    return this.httpClient.delete<any>(this.proURL + `delete/${id}`);
+    return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }
 }

@@ -1,199 +1,35 @@
 <div class="card border-light mb-6" style="max-width: flex;">
-    <h2 class="card-header bg-light border-light">Hard & Soft Skills</h2> <button *ngIf="isLogged"  type="button" class="fa-plus"></button>
+    <h2 class="card-header bg-light border-light">Hard & Soft Skills</h2> <button *ngIf="isLogged" routerLink="/newskill"  type="button" class="fa-plus"></button>
 </div>
-<h5>&nbsp;&nbsp;Tecnologías - Stack </h5>
-<div class="row">
-<div class="col-md-3 col-sm-6">
-  <div class="progress blue">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Angular</div>
-  </div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="progress blue">
-    <span class="progress-left">
-        <span class="progress-bar"></span>
-    </span>
-    <span class="progress-right">
-        <span class="progress-bar"></span>
-    </span>
-    <div class="progress-value">Bootstrap</div>
-</div>
+<div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+    <circle-progress 
+    [percent]="(skill.porcentaje)" 
+    [radius]="90" [imageSrc]="''" 
+    [title]="(skill.nombre)"
+    [titleColor]="'#212F3C'"
+    [showTitle]="true" 
+    [showImage]="false" 
+    [imageHeight]="70" 
+    [imageWidth]="70" 
+    [showUnits]="false"
+    [showSubtitle]="false" 
+    [outerStrokeWidth]="16" 
+    [innerStrokeWidth]="2" 
+    [outerStrokeColor]="'#78C000'"
+    [innerStrokeColor]="'#C7E596'" 
+    [animation]="true" 
+    [animationDuration]="600">
+    </circle-progress>
 
+    <div>
+        <td *ngIf="isLogged">
+            <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+                <i class="bi bi-pencil-fill"></i></button>
+        </td>
+        <td *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(skill.id)">
+                <i class="bi bi-trash-fill"></i></button>
+        </td>
+    </div>
+    
 </div>
-<div class="col-md-3 col-sm-6">
-  <div class="progress yellow">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Springboot</div>
-  </div>
-
-</div> 
-<div class="col-md-3 col-sm-6">
-  <div class="progress yellow">
-      <span class="progress-left"> 
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">MySQL</div>
-  </div>
-
-</div>   <h5>&nbsp;&nbsp;Lenguajes Formales</h5>
-<div class="row">
-<div class="col-md-3 col-sm-6">
-  <div class="progress blue">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Python</div>
-  </div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="progress green">
-    <span class="progress-left">
-        <span class="progress-bar"></span>
-    </span>
-    <span class="progress-right">
-        <span class="progress-bar"></span>
-    </span>
-    <div class="progress-value">Java</div>
-</div>
-
-</div>
-<div class="col-md-3 col-sm-6">
-  <div class="progress green">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Typescript</div>
-  </div>
-
-</div>
-<div class="col-md-3 col-sm-6">
-  <div class="progress blue">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">C++</div>
-  </div>
-
-</div> 
-</div> 
-  <h5>&nbsp;&nbsp;Lenguajes Naturales </h5>
-<div class="row">
-<div class="col-md-3 col-sm-6">
-  <div class="progress blue">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Español</div>
-  </div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="progress green">
-    <span class="progress-left">
-        <span class="progress-bar"></span>
-    </span>
-    <span class="progress-right">
-        <span class="progress-bar"></span>
-    </span>
-    <div class="progress-value">Inglés</div>
-</div>
-
-</div>
-<div class="col-md-3 col-sm-6">
-  <div class="progress green">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Portugués</div>
-  </div>
-
-</div>
-<div class="col-md-3 col-sm-6">
-  <div class="progress blue">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Francés</div>
-  </div>
-
-</div> 
-<h5>&nbsp;&nbsp;Comunicación </h5>
-<div class="row">
-<div class="col-md-3 col-sm-6">
-  <div class="progress blue">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Comunicativo</div>
-  </div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="progress green">
-    <span class="progress-left">
-        <span class="progress-bar"></span>
-    </span>
-    <span class="progress-right">
-        <span class="progress-bar"></span>
-    </span>
-    <div class="progress-value">Iniciativa</div>
-</div>
-
-</div>
-<div class="col-md-3 col-sm-6">
-  <div class="progress green">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Proactivo</div>
-  </div>
-
-</div>
-<div class="col-md-3 col-sm-6">
-  <div class="progress blue">
-      <span class="progress-left">
-          <span class="progress-bar"></span>
-      </span>
-      <span class="progress-right">
-          <span class="progress-bar"></span>
-      </span>
-      <div class="progress-value">Analítico</div>
-  </div>
-
-</div> 

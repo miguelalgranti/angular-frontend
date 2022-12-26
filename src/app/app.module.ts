@@ -11,6 +11,7 @@ import { AptitudesComponent } from './componentes/aptitudes/aptitudes.component'
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { HttpClientModule } from  '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './componentes/login/login.component';
 import { HomeComponent } from './componentes/home/home.component';
@@ -22,6 +23,8 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
+import { EditSkillComponent } from './componentes/aptitudes/edit-skill.component';
+import { NewSkillComponent } from './componentes/aptitudes/new-skill.component';
 
 
 
@@ -44,6 +47,8 @@ import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.com
     EditEducacionComponent,
     NewProyectoComponent,
     EditProyectoComponent,
+    EditSkillComponent,
+    NewSkillComponent,
     
 
   
@@ -58,7 +63,9 @@ import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.com
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    NgCircleProgressModule.forRoot({})
+   
   ],
   providers: [
     interceptorProvider

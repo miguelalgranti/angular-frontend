@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'; 
-import { FormsModule } from '@angular/forms';  
-import { Observable  } from 'rxjs'; 
-import { PersonaService } from 'src/app/service/persona.service';
+import { Skill } from 'src/app/model/skill';
+import { SkillService } from 'src/app/service/skill.service';
 import { TokenService } from 'src/app/service/token.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-aptitudes',
@@ -12,16 +9,37 @@ import { Router } from '@angular/router';
   styleUrls: ['./aptitudes.component.css']
 })
 export class AptitudesComponent implements OnInit {
-  isLogged = false;
-  constructor(private personaService: PersonaService, router: Router, private tokenService: TokenService) { }
+  skill: Skill[] = [];
 
-    ngOnInit(): void {
-      if(this.tokenService.getToken()){
-        this.isLogged = true;
-      }else{
-        this.isLogged = false;
-      }
-    };     
+  constructor(private skillS: SkillService, private tokenService: TokenService) { }
+  isLogged = false;
+  
+  ngOnInit(): void {
+    this.cargarSkills();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
-  
-  
+
+  cargarSkills(): void{
+    this.skillS.lista().subscribe(
+      data => {
+        this.skill = data;
+      }
+    )
+  }
+
+  delete(id: number){
+    if(id != undefined){
+      this.skillS.delete(id).subscribe(
+        data => {
+          this.cargarSkills();
+        }, err => {
+          alert("No se pudo borrar la skill");
+        }
+      )
+    }
+  }
+}
