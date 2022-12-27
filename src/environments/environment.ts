@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  URL: 'http://127.0.0.1:8080/',
+  URL: 'https://argentina-programa-miguelalgranti.koyeb.app/',
   //URL:'https://apidemiguel.herokuapp.com/' 
 };
 
