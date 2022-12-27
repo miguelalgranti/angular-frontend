@@ -25,6 +25,7 @@ import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.compo
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
 import { EditSkillComponent } from './componentes/aptitudes/edit-skill.component';
 import { NewSkillComponent } from './componentes/aptitudes/new-skill.component';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
 
 
 
@@ -49,6 +50,7 @@ import { NewSkillComponent } from './componentes/aptitudes/new-skill.component';
     EditProyectoComponent,
     EditSkillComponent,
     NewSkillComponent,
+    EditAcercaDeComponent,
     
 
   

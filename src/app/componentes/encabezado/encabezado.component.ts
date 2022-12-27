@@ -18,14 +18,18 @@ persona: persona = null;
   constructor( private personaService: PersonaService, private router: Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
+    this.cargarPersona();
     if(this.tokenService.getToken()){
       this.isLogged = true;
-    }else{
+    } else {
       this.isLogged = false;
     }
-  
-  
-  }
+    }
+    cargarPersona(){
+      this.personaService.detail(1).subscribe(
+        data => {this.persona = data}
+      )
+    }
   onLogOut(): void {
     this.tokenService.logOut();
     window.location.reload();

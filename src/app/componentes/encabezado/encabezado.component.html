@@ -9,45 +9,19 @@
 <a style="color: #ac2bac;" href="https://www.instagram.com/miguel.algranti/" role="button"
 ><i class="fab fa-instagram fa-2x"></i
 ></a>
-      <button  class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="login()" *ngIf="!isLogged">Login</button>
-      <button  class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
+      <button  class="btn btn-light"  (click)="login()" *ngIf="!isLogged">Login</button>
+      <button  class="btn btn-light"  (click)="onLogOut()" *ngIf="isLogged">Logout</button>
     <div id="AP-img">
       <img class="AP-img" src="../assets/logos/APLogo-20-20.png">
   </div>
 <div id="info" style="padding: 16px">
 <div id="info-img">
-    <img class="profile-image" src="../assets/media/jazz.jpeg"> 
+    <img class="profile-image" src="{{persona?.img}}"> 
 </div>
 <div id="info-data"> 
   <div>
-      <h1>Miguel M. Algranti</h1>  
-      <h5>Full Stack Developer Jr.</h5> <span>Buenos Aires, Argentina</span> <a *ngIf="isLogged" type="button" class="btn-right2" data-bs-toggle="modal" data-bs-target="#Modaleditor"><i class="fa fa-pen" *ngIf="isLogged"></i></a>
+      <h1>{{persona?.nombre}} {{persona?.apellido}}</h1>  
+      <h5>Full Stack Developer Jr.</h5> <span>Buenos Aires, Argentina</span> 
           <span>&nbsp;&nbsp;<a href="#">Información de contacto</a></span></div>
-      <div class="modal fade" id="Modaleditor" tabindex="-1" aria-labelledby="Modaleditor" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="Modaleditor">Modo Edición</h1>
-            </div>
-            <div class="mb-3">
-              <div>
-                <label>Nombre:
-                  <input class="form-control" placeholder="nombre" />
-                </label>
-                <label>Keywords:
-                  <input class="form-control" />
-                </label>
-                <label>Locación:
-                  <input class="form-control" />
-                </label>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" >Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+   
   </div>
