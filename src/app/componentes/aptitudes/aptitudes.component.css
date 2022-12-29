@@ -10,16 +10,6 @@
   right:4%;
   color:black;
 }
-.modal-body {
-  padding: 0;
-}
-.modal-content {
-  width: 80%;
-  margin: 0 auto;
-}
-.modal-body {
-  padding: 0;
-}
 .btn-close {
   position: absolute;
   right: 0;
