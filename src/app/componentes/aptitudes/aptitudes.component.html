@@ -2,7 +2,7 @@
     <h2 class="card-header bg-light border-light">Hard & Soft skills</h2>
     <button type="button" routerLink="/newskill" class="fa-plus" *ngIf="isLogged"></button>
 <div class="row">
-    <div class="text-center col-sm-2 col-md-4 col-lg-6 circulo" *ngFor="let skill of skill">
+    <div class="text-center col-sm-5 col-md-3 col-lg-2 circulo" *ngFor="let skill of skill">
    <div><circle-progress 
         [percent]="(skill.porcentaje)" 
         [radius]="90" [imageSrc]="''" 
