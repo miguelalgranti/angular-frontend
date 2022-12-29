@@ -8,7 +8,7 @@
                                 
                             <td><a class="link-dark" href="{{Proyecto.imagenP}}" target="_blank"><h4 class="mb-1">{{Proyecto.fechaP}} - {{Proyecto.nombreP}}</h4></a>
                             <small>{{Proyecto.descripcionP}}</small>
-                            <td *ngIf="isLogged"><a class="btn-right2" routerLink="/editpro/{{Proyecto.id}}"><i class="fa fa-pen" ></i></a>  &nbsp; &nbsp;&nbsp; &nbsp;  <td *ngIf="isLogged"></td> <a *ngIf="isLogged" (click)="delete(Proyecto.id)" class="btn-right"><i class="fa-solid fa-xmark"></i></a>
+                            <td *ngIf="isLogged"><a class="btn-right2" routerLink="/editpro/{{Proyecto.id}}"><i class="fa fa-pen" ></i></a>  &nbsp; &nbsp;&nbsp; &nbsp;<a *ngIf="isLogged" (click)="delete(Proyecto.id)" class="btn-right"><i class="fa-solid fa-xmark"></i></a>
                           
                        
       

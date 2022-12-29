@@ -5,7 +5,7 @@
                              <ul class="list-group">
                               <tr *ngFor="let Experiencia of expe" class="list-group-item" >
                               <td> <img class="Logo" src={{Experiencia.imagenE}}>&nbsp;|&nbsp;{{Experiencia.periodoE}}&nbsp;|&nbsp;{{Experiencia.institucionE}}&nbsp;|&nbsp;</td><td>{{Experiencia.descripcionE}}</td>  
-                              <td *ngIf="isLogged"><a class="btn-right2" routerLink="/editexp/{{Experiencia.id}}"><i class="fa fa-pen" ></i></a>  &nbsp; &nbsp;&nbsp; &nbsp;  <td *ngIf="isLogged"></td> <a *ngIf="isLogged" (click)="delete(Experiencia.id)" class="btn-right"><i class="fa-solid fa-xmark"></i></a></tr> 
+                              <td *ngIf="isLogged"><a class="btn-right2" routerLink="/editexp/{{Experiencia.id}}"><i class="fa fa-pen" ></i></a>  &nbsp; &nbsp;&nbsp; &nbsp; <a *ngIf="isLogged" (click)="delete(Experiencia.id)" class="btn-right"><i class="fa-solid fa-xmark"></i></a></tr> 
                             
                             </ul>
         

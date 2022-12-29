@@ -7,7 +7,7 @@
                             <td> <img class="Logo" src={{Educacion.imagenEd}}>&nbsp;&nbsp;<strong>{{Educacion.periodoEd}}</strong>&nbsp;&nbsp;</td>  
                             <td>&nbsp;&nbsp;{{Educacion.descripcionEd}}&nbsp;&nbsp;</td> 
                             <td>&nbsp;&nbsp;{{Educacion.institucionEd}}&nbsp;&nbsp;</td>  
-                            <td *ngIf="isLogged"><a class="btn-right2" routerLink="/editedu/{{Educacion.id}}"><i class="fa fa-pen"></i></a> &nbsp;<td *ngIf="isLogged"></td> <a *ngIf="isLogged" (click)="delete(Educacion.id)" class="btn-right"><i class="fa-solid fa-xmark"></i></a></tr>  
+                            <td *ngIf="isLogged"><a class="btn-right2" routerLink="/editedu/{{Educacion.id}}"><i class="fa fa-pen"></i></a>&nbsp;&nbsp; &nbsp;<td *ngIf="isLogged"></td> <a *ngIf="isLogged" (click)="delete(Educacion.id)" class="btn-right"><i class="fa-solid fa-xmark"></i></a></tr>  
                           </ul>
       
     </div>
