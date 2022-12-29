@@ -4,6 +4,10 @@
     right:2%;
     color:black;
 }
+.circulo {
+  margin: 10px 10px;
+ 
+}
 .btn-right2 {
   position:absolute;
   top:7%;
