@@ -1,5 +1,5 @@
 <div class="card border-light mb-6" style="max-width: flex;">
-    <h1 class="card-header bg-light border-light">Hard & Soft skills</h1>
+    <h2 class="card-header bg-light border-light">Hard & Soft skills</h2>
     <button type="button" routerLink="/newskill" class="fa-plus" *ngIf="isLogged"></button>
 <div class="row">
     <div class="text-center col-sm-3 col-md-3 col-lg-3 circulo" *ngFor="let skill of skill">
@@ -16,10 +16,10 @@
         [showSubtitle]="false" 
         [outerStrokeWidth]="16" 
         [innerStrokeWidth]="2" 
-        [outerStrokeColor]="'#668c23'"
-        [innerStrokeColor]="'#C7E596'" 
+        [outerStrokeColor]="(skill.color)"
+        [innerStrokeColor]="(skill.color)" 
         [animation]="true" 
-        [animationDuration]="600">
+        [animationDuration]="400">
         </circle-progress></div> 
 
 
