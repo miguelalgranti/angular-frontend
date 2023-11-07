@@ -14,14 +14,15 @@
     <div id="AP-img">
       <img class="AP-img" src="../assets/logos/APLogo-20-20.png">
   </div>
-<div id="info" style="padding: 16px">
-<div id="info-img">
-    <img class="profile-image" src="../assets/media/jazz.jpeg"> 
+<div id="info" style="padding: 30px">
+<div id="info-img" style="padding:16 0px; margin-top:auto;">
+    <img class="profile-image" src={{persona?.img}}> 
 </div>
 <div id="info-data"> 
   <div>
-      <h1>{{persona?.nombre}} {{persona?.apellido}}</h1>  
-      <h5>Full Stack Developer Jr.</h5> <span>Buenos Aires, Argentina</span> 
-          <span>&nbsp;&nbsp;<a href="#">Información de contacto</a></span></div>
+      <h1>{{persona?.nombre}} {{persona?.apellido}}</h1> <button *ngIf="isLogged" class="btn-right2" routerLink="/editacercade/1"><i class="fa fa-pen" ></i></button>  
+      <h5>Full Stack Web Developer</h5>
+      <span>Buenos Aires,  Argentina</span> &nbsp; <a href="#">contacto</a>
+          </div>
    
   </div>

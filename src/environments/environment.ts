@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  URL: 'https://argentina-programa-miguelalgranti.koyeb.app/',
-  //URL:'https://apidemiguel.herokuapp.com/' 
+  //URL: 'encouraging-ally-miguelalgranti.koyeb.app/',
+  URL: 'http://localhost:8080/'
 };
 
 /*

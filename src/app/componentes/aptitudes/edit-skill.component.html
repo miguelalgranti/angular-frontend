@@ -5,17 +5,18 @@
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                    
-                    <label for="institucionE">Nombre de Skill</label>
+                    <label for="nombre">Nombre de Skill</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="skill.nombre" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Porcentaje</label>
+                    <label for="porcentaje">Porcentaje</label>
                     <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Color</label>
+                    <label for="color">Color</label>
                     <input type="text" class="form-control" id="color" name="color" [(ngModel)]="skill.color" required>
                 </div>
+                <br>
                 <button class="btn btn-primary">
                     update skill
                 </button>

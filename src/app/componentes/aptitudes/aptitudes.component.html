@@ -17,7 +17,7 @@
         [outerStrokeWidth]="10" 
         [innerStrokeWidth]="2" 
         [outerStrokeColor]="(skill.color)"
-        [innerStrokeColor]="(skill.color)" 
+        [innerStrokeColor]='(skill.color)' 
         [animation]="true" 
         [animationDuration]="400">
         </circle-progress></div> 
@@ -25,12 +25,11 @@
 
     <div>
         <td *ngIf="isLogged">
-            <button class="btn btn-light" routerLink="/editskill/{{skill.id}}">
+            <button class="btn btn-solid" routerLink="/editskill/{{skill.id}}">
                 <i class="fa fa-pen"></i></button>
         </td>
         <td *ngIf="isLogged">
-            <button class="fa-solid fa-xmark" (click)="delete(skill.id)">
-                <i class="bi bi-trash-fill"></i></button>
+            <button class="btn btn-solid" (click)="delete(skill.id)"><i class="fa-solid fa-xmark"></i></button>
         </td>
     </div>
 </div>

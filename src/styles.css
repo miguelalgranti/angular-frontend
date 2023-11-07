@@ -9,7 +9,7 @@
 }
 
 div#profile-background {
-    display: 80%;
+    display: 100%;
     opacity: 100%;
 }
 div#profile-background img {
@@ -19,11 +19,12 @@ div#profile-background img {
 }
 .profile-image {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     margin-top: -165px;
     margin-left: 0;
     z-index: 1;
+   
     
 
 }
@@ -39,6 +40,10 @@ div#profile-background img {
     left:0;
 
 } 
+.fa-xmark {
+    padding: 64%
+
+}
 .Logo {
     border-radius: 100;
     width: 60px;
