@@ -4,9 +4,11 @@
 
 export const environment = {
   production: false,
-  //URL: 'https://encouraging-ally-miguelalgranti.koyeb.app',
-  URL: 'http://localhost:8080/'
+  URL: 'https://encouraging-ally-miguelalgranti.koyeb.app',
+  //URL:'https://apidemiguel.herokuapp.com/' 
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file
