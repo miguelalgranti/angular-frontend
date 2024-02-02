@@ -7,6 +7,9 @@
 .matcard#first-card {
     padding: 7;
 }
+html,body{ overflow-x:hidden;
+
+}
 
 div#profile-background {
     display: 100%;
