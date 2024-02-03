@@ -12,7 +12,7 @@ html,body{ overflow-x:hidden;
 }
 
 div#profile-background {
-    display: 100%;
+    display: 80%;
     opacity: 100%;
 }
 div#profile-background img {
